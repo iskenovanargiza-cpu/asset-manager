@@ -14,6 +14,8 @@ public class Main {
         assets.add(new Vehicle("My Car", "2019-03-12", 22000, "Dodge Charger SXT", 3, 45000));
         assets.add(new Vehicle("My leisure Car", "2018-03-12", 35000, "Mercedes Benz SL550", 2, 45000));
 
+        Asset a = new Asset("pepe","last year", 180000);
+
         for (Asset asset : assets) {
             System.out.println(asset.getDescription());
             System.out.println(asset.getDateAcquired());
@@ -26,7 +28,6 @@ public class Main {
             } else if (asset instanceof Vehicle){
                 Vehicle vehicle = (Vehicle) asset;
                 System.out.println("Vehicle:" + vehicle.getYear() + " "+ vehicle.getMakeModel());
-
             }
         }
         System.out.println();
